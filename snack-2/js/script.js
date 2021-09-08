@@ -70,5 +70,5 @@ for (var i=0; i < zucchina.length; i++){
 }
 console.log(maggiore15);
 console.log(minore15);
-console.log("La somma dell'array con le zucchine minori di 15cm è:",somma2,"gr");
-console.log("La somma dell'array con le zucchine maggiori di 15cm è:",somma1,"gr");
+console.log("La somma del peso delle zucchine minori di 15cm è:",somma2,"gr");
+console.log("La somma del peso delle zucchine maggiori di 15cm è:",somma1,"gr");
