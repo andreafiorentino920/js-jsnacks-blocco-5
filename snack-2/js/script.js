@@ -7,42 +7,42 @@ var zucchina = [
     {
         "varieta": 1,
         "peso": 300,
-        "lunghezza in cm": 17
+        "lunghezza": 17
     },
     {
         "varieta": 2,
         "peso": 110,
-        "lunghezza in cm": 11
+        "lunghezza": 11
     },
     {
         "varieta": 3,
         "peso": 160,
-        "lunghezza in cm": 12
+        "lunghezza": 12
     },
     {
         "varieta": 4,
         "peso": 170,
-        "lunghezza in cm": 13
+        "lunghezza": 13
     },
     {
         "varieta": 5,
         "peso": 240,
-        "lunghezza in cm": 24
+        "lunghezza": 24
     },
     {
         "varieta": 6,
         "peso": 215,
-        "lunghezza in cm": 15
+        "lunghezza": 15
     },
     {
         "varieta": 7,
         "peso": 188,
-        "lunghezza in cm": 14
+        "lunghezza": 14
     },
     {
         "varieta": 8,
         "peso": 370,
-        "lunghezza in cm": 19
+        "lunghezza": 19
     },
     {
         "varieta": 9,
@@ -52,11 +52,23 @@ var zucchina = [
     {
         "varieta": 10,
         "peso": 100,
-        "lunghezza in cm": 10
+        "lunghezza": 10
     }
 ];
-var somma = 0;
+var maggiore15 = [];
+var minore15 = [];
+var somma1 = 0;
+var somma2 = 0;
 for (var i=0; i < zucchina.length; i++){
-    somma += zucchina[i].peso;
+    if (zucchina[i].lunghezza <= 15 ){
+        minore15.push(zucchina[i]);
+        somma2 += zucchina[i].peso;
+    }else{
+        maggiore15.push(zucchina[i]);
+        somma1 += zucchina[i].peso;
+    }
 }
-console.log("Il peso delle zucchine è,", somma,"grammi");
+console.log(maggiore15);
+console.log(minore15);
+console.log("La somma dell'array con le zucchine minori di 15cm è:",somma2,"gr");
+console.log("La somma dell'array con le zucchine maggiori di 15cm è:",somma1,"gr");
